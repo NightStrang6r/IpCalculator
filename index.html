@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>IP Calculator</title>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1 class="logo">
+        🌐 IP Calculator 🌐
+    </h1>
+
+    <div class="container">
+        <div class="container-input">
+            <input type="text" class="input mini" id="input1Octet" maxlength="3" placeholder="192" value="192" />
+            &nbsp;.&nbsp;
+            <input type="text" class="input mini" id="input2Octet" maxlength="3" placeholder="168" value="168" />
+            &nbsp;.&nbsp;
+            <input type="text" class="input mini" id="input3Octet" maxlength="3" placeholder="0" value="0" />
+            &nbsp;.&nbsp;
+            <input type="text" class="input mini" id="input4Octet" maxlength="3" placeholder="100" value="100" />
+            &nbsp;/&nbsp;
+            <input type="text" class="input mini" id="inputPrefix" maxlength="2" placeholder="24" value="24" />
+        </div>
+        <br><br>
+        <div class="container-result">
+            <table class="table-result">
+                <tr>
+                    <td>Адрес сети</td>
+                    <td class="td-center" id="resultNetwork">1</td>
+                </tr>
+                <tr>
+                    <td>Маска сети</td>
+                    <td class="td-center" id="resultMask">1</td>
+                </tr>
+                <tr>
+                    <td>Номер узла</td>
+                    <td class="td-center" id="resultNode">1</td>
+                </tr>
+                <tr>
+                    <td>Макс. количество узлов</td>
+                    <td class="td-center" id="resultNodeCount">1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
